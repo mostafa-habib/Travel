@@ -1,0 +1,34 @@
+header {
+    height: 50px;
+}
+footer {
+    height: 50px;
+    background-color: #f8f9fa!important;
+}
+.section {
+    height: calc(100vh - 100px);
+    padding: 12rem;
+}
+.form-group {
+    position: relative;
+}
+.autocomplete-items {
+    position: absolute;
+    background-color: #eee;
+    z-index: 99;
+    max-height: 150px;
+    overflow-y: auto;
+    width: calc(100% - 2px);
+    margin-top: 0.5rem;
+  }
+  
+  .autocomplete-items div {
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #f4f4f4;
+  }
+
+  

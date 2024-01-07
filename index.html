@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Website</title>
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Travel Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Form Container -->
+  <div class="container section">
+    <form id="travelForm">
+      <div class="form-group">
+        <label for="destination">Destination</label>
+        <input type="text" class="form-control" id="destination" placeholder="Enter a city">
+        <div id="destinationList" class="autocomplete-items"></div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="checkIn">Check-In</label>
+          <input type="date" class="form-control" id="checkIn">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="checkOut">Check-Out</label>
+          <input type="date" class="form-control" id="checkOut">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="nights">Nights</label>
+        <select class="form-control" id="nights">
+          <!-- Options will be added dynamically using JavaScript -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="nationality">Nationality</label>
+        <input type="text" class="form-control" id="nationality" placeholder="Enter nationality">
+        <div id="nationalityList" class="autocomplete-items"></div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3">
+    <div class="container text-center">
+      <span class="text-muted">© 2024 Travel Website</span>
+    </div>
+  </footer>
+
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
